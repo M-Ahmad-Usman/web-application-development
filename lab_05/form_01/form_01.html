@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 01</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Application Form</h1>
+        <form>
+
+            <div class="name-details">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="first-name">
+                
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="last-name">
+            </div>
+
+            <div class="birth-details">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+
+                <label for="age">Age:</label>
+                <input type="number">
+            </div>
+
+            <div class="contact-gender-details">
+                <label for="gender">Gender:</label>
+
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="not-to-say">Prefer Not to say</option>
+                </select>
+
+                <label for="email">Email Address: </label>
+                <input type="email" id="email" name="email" placeholder="Enter email address">
+            </div>
+
+            <div class="positions">
+                <label for="positions">Positions Available:</label>
+
+                <input type="radio" id="junior-dev" name="positions">
+                <label for="junior-dev">Junior Developer</label>
+
+                <input type="radio" id="mid-level-dev" name="positions">
+                <label for="mid-level-dev">Mid-level Developer</label>
+
+                <input type="radio" id="senior-dev" name="positions">
+                <label for="senior-dev">Senior Developer</label>
+            </div>
+
+            <div class="programming-languages">
+                <label for="programming-languages">Programming Languages:</label>
+
+                <input type="checkbox" name="java" id="java">
+                <label for="java">Java</label>
+
+                <input type="checkbox" name="javascript" id="javascript">
+                <label for="javascript">Javascript</label>
+
+                <input type="checkbox" name="python" id="python">
+                <label for="python">Python</label>
+            </div>
+
+            <div class="password">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+
+                <label for="password">Confirm Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
