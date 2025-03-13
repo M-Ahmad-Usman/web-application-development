@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 02</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Novell Services Login</h1>
+    <form>
+        <label for="uname">Username:</label>
+        <input type="text" name="uname" id="uname">
+
+        <label for="password">Password:</label>
+        <input type="text" name="password" id="password">
+
+        <label for="city">City Of Employment:</label>
+        <input type="text" name="city" id="city">
+
+        <label for="web-server">Web Server:</label>
+        <select name="web-server" id="web-server">
+            <option value="Server 1">Server 1</option>
+            <option value="Server 2">Server 2</option>
+            <option value="Server 3">Server 3</option>
+        </select>
+
+        <label for="role">Please specify your role:</label>
+        <div class="select-role">
+            <input type="radio" name="role" value="admin" id="admin">
+            <label for="admin">Admin</label> <br>
+            <input type="radio" name="role" value="engineer" id="engineer">
+            <label for="engineer">Engineer</label> <br>
+            <input type="radio" name="role" value="manager" id="manager">
+            <label for="manager">Manager</label> <br>
+            <input type="radio" name="role" value="guest" id="guest">
+            <label for="guest">Guest</label>
+        </div>
+
+        <label for="sign-on">Single Sign on to the following:</label>
+        <div class="sign-on">
+            <input type="checkbox" name="mail" id="mail">
+            <label for="mail">Mail</label><br>
+
+            <input type="checkbox" name="payroll" id="payroll">
+            <label for="payroll">Payroll</label><br>
+
+            <input type="checkbox" name="self-service" id="self-service">
+            <label for="self-service">self-service</label>
+        </div>
+
+        <div class="btn">
+            <button class="login">Login</button>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>

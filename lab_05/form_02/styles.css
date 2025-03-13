@@ -1,0 +1,21 @@
+form {
+    width: 22vw;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'input-labels input-fields';
+    gap: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form label {
+    align-self: center;
+}
+
+.btn {
+    grid-column: 2;
+}
