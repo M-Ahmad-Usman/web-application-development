@@ -1,0 +1,40 @@
+h1 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+form {
+    width: 30vw;
+    background-color: aqua;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 10px;
+    row-gap: 20px;
+}
+
+input[type="text"], select {
+    height: 30px;
+}
+
+form label {
+    align-self: center;
+}
+
+input[type="submit"] {
+    background-color: rgb(131, 211, 11);
+    justify-self: flex-end;
+}
+
+input[type="reset"] {
+    background-color: rgb(176, 0, 176);
+    justify-self: flex-start;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 80px;
+    height: 30px;
+    color: white;
+    margin: 10px;
+}

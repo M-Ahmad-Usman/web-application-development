@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 6</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Project Management</h1>
+    <!-- form with 2 grid columns -->
+    <form>
+        <label for="pname">Project Name</label>
+        <input type="text" name="pname" id="pname" placeholder="Project Name">
+
+        <label for="assigned-to">Assigned To</label>
+        <select name="assigned-to" id="assigned-to">
+            <option value="Ex Merry Petision">Ex Merry Petision</option>
+        </select>
+
+        <label for="start-date">Start Date</label>
+        <input type="date" name="start-date" id="start-date">
+
+        <label for="end-date">End Date</label>
+        <input type="date" name="end-date" id="end-date">
+
+        <label for="priority">Priority</label>
+        <div class="priority-values">
+            <input type="radio" name="priority" id="high">
+            <label for="high">High</label>
+
+            <input type="radio" name="priority" id="average">
+            <label for="average">Average</label>
+
+            <input type="radio" name="priority" id="low">
+            <label for="low">Low</label>
+        </div>
+
+        <label for="description">Description</label>
+        <textarea name="description" id="description"></textarea>
+
+        <!-- Spans across two columns -->
+        <!-- <div class="btn"> -->
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        <!-- </div> -->
+    </form>
+</body>
+
+</html>
