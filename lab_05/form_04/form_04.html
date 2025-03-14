@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 04</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- grid form with two columns -->
+    <form>
+        <!-- Row1. spans across two columns -->
+        <div class="header">
+            <h1>Comments</h1>
+            <h3>Leave a comment</h3>
+            <p>Your email address will not be published. Required fields are marked Name: <span aria-label="required">*</span></p>
+        </div>
+
+        <!-- Row2. On grid's first column -->
+        <div class="input-name">
+            <label for="name">Name: <span aria-label="required">*</span></label><br>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+        </div>
+
+        <!-- Row2 On grid's second column -->
+        <div class="input-email">
+            <label for="email">Email: <span aria-label="required">*</span></label><br>
+            <input type="text" id="email" name="email" placeholder="Email" required>
+        </div>
+
+        <!-- Row3 Spans across two columns -->
+        <div class="input-message">
+            <label for="message">Message: <span aria-label="required">*</span></label><br> 
+            <textarea name="message" id="message" rows="5" placeholder="Write your comment here"></textarea> 
+        </div>
+
+        <!-- Row4 Spans across two columns -->
+         <div class="btn">
+            <input type="submit" value="Post Comment">
+         </div>
+    </form>
+</body>
+</html>
