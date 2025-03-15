@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 08</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        <div class="form-header">
+            <h1>Register</h1>
+            <p>Kindly fill in this form to register.</p>
+        </div>
+        
+        <!-- flex container -->
+        <div class="form-content">
+            <div class="name-details">
+                <label for="uname">Username</label><br>
+                <input type="text" id="uname" name="uname" placeholder="Enter username">
+            </div>
+            <div class="email-details">
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" placeholder="Enter email">
+            </div>
+            <div class="password-details">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" placeholder="Enter password">
+            </div>
+            <div class="password-details">
+                <label for="r-password">Repeat Password</label><br>
+                <input type="r-password" id="r-password" name="r-password" placeholder="Enter password">
+            </div>
+
+            <input type="submit" value="Register">
+            <span class="login">
+                <p>Already have an account? <a href="#">Login.</a></p>
+            </span>
+        </div>
+    </form>
+</body>
+</html>
