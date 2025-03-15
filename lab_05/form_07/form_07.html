@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 7</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Login Form</h1>
+    <!-- flex container -->
+    <form>
+        <!-- flex container -->
+        <div id="login">
+            <!-- flex container -->
+            <div id="name-input">
+                <label for="uname">Username: <span aria-label="required">*</span></label>
+                <input type="text" id="uname" name="uname" placeholder="Enter your Username" required>
+            </div>
+            <!-- flex container -->
+            <div id="password-input">
+                <label for="password">Password: <span aria-label="required">*</span></label>
+                <input type="text" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <div id="remember-me">
+                <input type="checkbox" name="remember-me-chkbx" id="remember-me-chkbx">
+                <label for="remember-me-chkbx">Remember me</label>
+            </div>
+
+            <input type="submit" value="Login">
+        </div>
+        <!-- flex container -->
+        <div id="troubleshoot">
+            <a href="#">Don't have an account?</a>
+            <a href="#">Forgot password?</a>
+        </div>
+    </form>
+</body>
+</html>
