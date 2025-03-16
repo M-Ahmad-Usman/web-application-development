@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+}
+
+.sign-in, .sign-up {
+    outline: 15px solid rgb(215, 176, 0);
+    border: 10px solid rgb(190, 190, 190);
+    padding: 5px 15px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.sign-up {
+    height: 90%;
+    width: 30%;
+}
+
+.sign-in {
+    height: 70%;
+    width: 35%;
+}
+
+.sign-in h1, .sign-up h1 {
+    font-size: 1.5em;
+    align-self: center;
+    border: 4px dotted rgb(215, 176, 0);
+    margin: 10px 0;
+    padding: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    min-height: 30px;
+}
+
+.submit {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.submit a {
+    color: rgb(215, 176, 0);
+    display: block;
+}
+
+.submit input[type="submit"] {
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(215, 176, 0);
+    color: brown;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
