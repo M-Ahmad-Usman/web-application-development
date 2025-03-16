@@ -1,0 +1,67 @@
+:root {
+    --facebook-color: rgb(1, 101, 225)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(1, 70, 232, 0.779);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.login,
+.signup {
+    flex-basis: 25%;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="submit"],
+.login-facebook,
+.login-google {
+    height: 35px;
+    padding: 0 10px;
+}
+
+input[type="submit"] {
+    background-color: rgba(4, 86, 228, 0.868);
+    color: white;
+}
+
+.login-facebook {
+    background-color: var(--facebook-color);
+    color: white;
+    font-weight: bold;
+}
+
+.login-google {
+    background-color: whitesmoke;
+    color: rgb(100, 100, 100);
+}
+
+input[type="submit"],
+.login-facebook,
+.login-google {
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
