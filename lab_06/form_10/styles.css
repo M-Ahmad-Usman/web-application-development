@@ -1,0 +1,62 @@
+:root {
+    --facebook-color: rgb(1, 101, 225)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(1, 70, 232, 0.779);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.heading {
+    display: flex;
+    gap: 10px;
+    width: 30%;
+    font-size: 2rem;
+    color: white;
+}
+
+.ruler {
+    align-self: stretch;
+    width: 20px;
+    background-color: white;
+}
+
+.signup {
+    width: 30%;
+    height: 70%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    height: 45px;
+    padding: 0 10px;
+}
+
+input[type="submit"] {
+    background-color: rgba(4, 86, 228, 0.868);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
