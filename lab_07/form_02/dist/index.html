@@ -5,9 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./styles.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-4xl">
-    Hello world!
-  </h1>
+<body class="box-border">
+    <div class="w-screen h-screen p-8 flex flex-col gap-6 sm:flex-row sm:h-[50vh] sm:p-4 md:h-[60vh] md:gap-8 lg:h-[70vh] lg:justify-center">
+
+        <div class="basis-1/2 max-h-1/2 flex justify-center items-center sm:max-h-full sm:justify-end lg:basis-[35%]">
+            <img src="./images/cover_image.png" alt="Image of a woman" class="min-h-4/5 max-h-full bg-cover">
+        </div>
+
+        <div class="basis-1/2 sm:h-full lg:basis-[30%]">
+            <form class="h-full p-3 flex flex-col justify-evenly gap-1">
+                <h1 class="text-2xl text-center">Contact Us</h1>
+
+                <label for="uname">Name:</label>
+                <input type="text" name="uname" id="uname" placeholder="Enter your Name" class="border-b p-2">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter a valid email address" class="border-b p-2">
+                
+                <label for="message">Message</label>
+                <textarea name="message" id="message" class="border-b p-2"></textarea>
+
+                <div>
+                    <input type="checkbox" name="terms" id="terms">
+                    <label for="terms">I accept the <a href="#">Terms of Service</a></label>
+                </div>
+
+                <input type="submit" value="SUBMIT" class="h-[10%] bg-red-700 text-white font-bold rounded-md">
+            </form>
+        </div>
+    </div>
+    <div class="mt-2 w-screen p-8 flex flex-wrap justify-center gap-2">
+        <div class="bg-red-700 text-white p-2 h-32 w-64">
+            <h3 class="text-[1.2rem] font-semibold"><img src="images/phone-svgrepo-com.png" alt="" class="h-5 bg-white rounded-full inline mr-2">CALL US</h3>
+            <span>1(234) 567-891</span><br>
+            <span>1(234) 987-654</span>
+        </div>
+        <div class="bg-red-700 text-white p-2 h-32 w-64">
+            <h3 class="text-[1.2rem] font-semibold"><img src="images/location-pin-svgrepo-com.png" alt="" class="h-5 bg-white rounded-full inline mr-2">Location</h3>
+            <span>121 Rock Street, 21 Avenue, New York, NY 92103-9000</span>
+        </div>
+        <div class="bg-red-700 text-white p-2 h-32 w-64">
+            <h3 class="text-[1.2rem] font-semibold"><img src="images/time-svgrepo-com.png" alt="" class="h-5 bg-white rounded-full inline mr-2">Hours</h3>
+            <span>Mon - Fri ..... 11am - 8pm, Sat, Sun ...... 6am - 8pm</span>
+        </div>
+    </div>
 </body>
 </html>
