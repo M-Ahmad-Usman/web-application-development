@@ -7,8 +7,32 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="text-4xl">
-      Hello
-    </div>
+    <div class="p-4 flex flex-col gap-4 sm:flex-row lg:justify-center">
+		<form class="w-full rounded-3xl py-4 px-8 text-white flex flex-col gap-6 justify-around bg-indigo-500 lg:w-2/5">
+			<h1 class="text-center text-3xl font-extrabold">Log in</h1>
+			<div>
+				<label for="uname">Username <span aria-label="required">*</span></label><br>
+				<input type="text" name="uname" id="uname" class="bg-white p-2 w-full rounded-2xl text-black" placeholder="Enter your Username">
+			</div>
+			<div>
+				<label for="password">Password <span aria-label="required">*</span></label><br>
+				<input type="password" name="password" id="password" class="bg-white p-2 w-full rounded-2xl text-black" placeholder="Enter your Password">
+			</div>
+			<div>
+				<input type="checkbox" name="remember-me" id="remember-me">
+				<label for="remember-me">Remember me</label>
+			</div>
+			<input type="submit" value="LOGIN" class="bg-amber-400 active:bg-amber-500 text-indigo-500 font-bold w-full rounded-2xl h-10">
+			<div class="flex justify-between flex-wrap underline">
+				<a href="#">Forgot password</a>
+				<a href="#">Don't have an account?</a>
+			</div>
+			<p class="text-center ">Image from <a href="#">Freepik</a></p>
+		</form>
+
+		<div class="w-full lg:w-2/5">
+			<img src="images/cover_image.jpg" alt="" class="w-full sm:h-full rounded-3xl">
+		</div>
+	</div>
 </body>
 </html>
