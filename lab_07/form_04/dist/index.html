@@ -1,14 +1,62 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form 04</title>
-  <link href="./styles.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form 04</title>
+	<link href="./styles.css" rel="stylesheet">
 </head>
+
 <body>
-  <h1 class="text-4xl">
-    Hello world!
-  </h1>
+	<div class="p-8 lg:flex lg:gap-4 lg:justify-center lg:items-center">
+		<!-- sign up form -->
+		<form class="min-h-[60vh] px-6 py-3 flex flex-col justify-evenly sm:max-w-[60%] sm:mx-auto md:max-w-[50%] lg:w-[30%] border-[20px] border-gray-300 outline-amber-400 outline-[20px]">
+			<h1 class="w-fit mx-auto p-3 text-amber-400 border-dotted border-amber-400 border-2">Your Logo Here</h1>
+
+			<label for="fname">First name<span aria-label="required">*</span></label>
+			<input type="text" name="fname" id="fname" class="w-full border-gray-400 border-2">
+
+			<label for="lname">Last name<span aria-label="required">*</span></label>
+			<input type="text" name="lname" id="lname" class="w-full border-gray-400 border-2">
+
+			<label for="email">Email address<span aria-label="required">*</span></label>
+			<input type="email" name="email" id="email" class="w-full border-gray-400 border-2">
+
+			<label for="password">Password<span aria-label="required">*</span></label>
+			<input type="password" name="password" id="password" class="w-full border-gray-400 border-2">
+
+			<label for="password--again">Again password<span aria-label="required">*</span></label>
+			<input type="password-again" name="password-again" id="password-again" class="w-full border-gray-400 border-2">
+			
+			<div class="flex justify-between gap-1 mt-2">
+				<a href="#" class="text-amber-400">Have an account</a>
+				<input type="submit" value="Signup" class="bg-amber-400 text-amber-700 font-bold py-2 px-2 rounded">
+			</div>
+		</form>
+
+		<!-- login form -->
+		<form class="mt-14 min-h-[50vh] px-6 py-3 flex flex-col justify-evenly sm:max-w-[70%] sm:mx-auto md:max-w-[60%] lg:w-[35%] border-[20px] border-gray-300 outline-amber-400 outline-[20px]">
+			<h1 class="w-fit mx-auto p-3 text-amber-400 border-dotted border-amber-400 border-2">Your Logo Here</h1>
+
+			<div>
+				<label for="uname-email">Username or Email address<span aria-label="required">*</span></label><br>
+				<input type="text" name="uname-email" id="uname-email" class="w-full border-gray-400 border-2">
+			</div>
+
+			<div>
+				<label for="password">Password<span aria-label="required">*</span></label><br>
+				<input type="password" name="password" id="password" class="w-full border-gray-400 border-2">
+			</div>
+			<div class="flex justify-between items-center gap-1 mt-2">
+				<div>
+					<a href="#" class="text-amber-400">Forgot password?</a><br>
+					<a href="#" class="text-amber-400">Create an account</a>
+				</div>
+				<input type="submit" value="Signup" class="bg-amber-400 text-amber-700 font-bold py-2 px-2 rounded">
+			</div>
+		</form>
+	</div>
 </body>
+
 </html>
