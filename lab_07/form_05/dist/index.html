@@ -8,45 +8,47 @@
 	<title>Form 05</title>
 </head>
 
-<body>
-	<form class="p-3 flex flex-col gap-4 m-4">
-		<h1 class="text-3xl font-bold self-center text-fuchsia-600">Contact Us</h1>
-		<div>
-			<label for="uname">Name</label><br>
-			<input type="text" name="uname" id="uname" class="p-2 border-b-2 border-fuchsia-600 w-full"
-				placeholder="Enter your Name">
-		</div>
-		<div>
-			<label for="email">Email</label><br>
-			<input type="email" name="email" id="email" class="p-2 border-b-2 border-fuchsia-600 w-full"
-				placeholder="Enter a valid email address">
-		</div>
-		<div>
-			<label for="message">Message</label><br>
-			<textarea name="message" id="message" class="border-b-2 border-fuchsia-600 w-full"></textarea>
-		</div>
-		<div>
-			<input type="checkbox" name="terms" id="terms">
-			<label for="terms">I accept the <a href="#" class="text-fuchsia-500">Terms of Service</a></label>
-		</div>
-		<input type="submit" value="SUBMIT" class="bg-fuchsia-600 text-white font-bold rounded-2xl h-10">
-	</form>
-	<div class="flex flex-col gap-8 text-center m-4 p-3 bg-gray-200">
-		<div>
-			<h3 class="font-bold text-fuchsia-500">CALL US</h3>
-			<p>1(234) 567-891</p>
-			<p>1 (234) 987-654</p>
-		</div>
-		<div>
-			<h3 class="font-bold text-fuchsia-500">LOCATION</h3>
-			<p>121 Rock Street, 12 Avenue, New York, NY 92103-9000</p>
-		</div>
-		<div>
-			<h3 class="font-bold text-fuchsia-500">OUR TOP SERVICES</h3>
-			<p><strong>Self-Studying</strong></p>
-			<p><strong>Online Courses</strong></p>
-			<p><strong>Challenge Yourself</strong></p><br>
-			<p>Image from <a href="#" class="underline">Freepik</a></p>
+<body class="bg-fuchsia-400">
+	<div class="h-screen sm:flex sm:justify-center sm:items-end">
+		<form class="p-4 flex flex-col gap-4 m-4 bg-white sm:h-[470px] sm:justify-around sm:w-[400px] sm:gap-0 sm:m-0 sm:ml-4 sm:my-2">
+			<h1 class="text-3xl font-bold self-center text-violet-700">Contact Us</h1>
+			<div>
+				<label for="uname">Name</label><br>
+				<input type="text" name="uname" id="uname" class="p-2 border-b-2 border-violet-700 w-full"
+					placeholder="Enter your Name">
+			</div>
+			<div>
+				<label for="email">Email</label><br>
+				<input type="email" name="email" id="email" class="p-2 border-b-2 border-violet-700 w-full"
+					placeholder="Enter a valid email address">
+			</div>
+			<div>
+				<label for="message">Message</label><br>
+				<textarea name="message" id="message" class="border-b-2 border-violet-700 w-full h-[100px]"></textarea>
+			</div>
+			<div>
+				<input type="checkbox" name="terms" id="terms">
+				<label for="terms">I accept the <a href="#" class="text-violet-600">Terms of Service</a></label>
+			</div>
+			<input type="submit" value="SUBMIT" class="bg-violet-700 text-white font-bold rounded-2xl h-10">
+		</form>
+		<div class="flex flex-col gap-8 text-center m-4 p-4 bg-gray-200 sm:h-[470px] sm:justify-around sm:m-0 sm:mr-4 sm:my-2">
+			<div>
+				<h3 class="font-bold text-[20px] text-violet-700">CALL US</h3>
+				<p>1(234) 567-891</p>
+				<p>1 (234) 987-654</p>
+			</div>
+			<div>
+				<h3 class="font-bold text-[20px] text-violet-700">LOCATION</h3>
+				<p>121 Rock Street, 12 Avenue, New York, NY 92103-9000</p>
+			</div>
+			<div>
+				<h3 class="font-bold text-[20px] text-violet-700">OUR TOP SERVICES</h3>
+				<p><strong>Self-Studying</strong></p>
+				<p><strong>Online Courses</strong></p>
+				<p><strong>Challenge Yourself</strong></p><br>
+				<p>Image from <a href="#" class="underline">Freepik</a></p>
+			</div>
 		</div>
 	</div>
 
