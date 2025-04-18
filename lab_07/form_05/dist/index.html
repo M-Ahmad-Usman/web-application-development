@@ -1,14 +1,55 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./styles.css" rel="stylesheet"> 
-  <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./styles.css" rel="stylesheet">
+	<title>Form 05</title>
 </head>
+
 <body>
-  <h1 class="text-4xl">
-    Hello world!
-  </h1>
+	<form class="p-3 flex flex-col gap-4 m-4">
+		<h1 class="text-3xl font-bold self-center text-fuchsia-600">Contact Us</h1>
+		<div>
+			<label for="uname">Name</label><br>
+			<input type="text" name="uname" id="uname" class="p-2 border-b-2 border-fuchsia-600 w-full"
+				placeholder="Enter your Name">
+		</div>
+		<div>
+			<label for="email">Email</label><br>
+			<input type="email" name="email" id="email" class="p-2 border-b-2 border-fuchsia-600 w-full"
+				placeholder="Enter a valid email address">
+		</div>
+		<div>
+			<label for="message">Message</label><br>
+			<textarea name="message" id="message" class="border-b-2 border-fuchsia-600 w-full"></textarea>
+		</div>
+		<div>
+			<input type="checkbox" name="terms" id="terms">
+			<label for="terms">I accept the <a href="#" class="text-fuchsia-500">Terms of Service</a></label>
+		</div>
+		<input type="submit" value="SUBMIT" class="bg-fuchsia-600 text-white font-bold rounded-2xl h-10">
+	</form>
+	<div class="flex flex-col gap-8 text-center m-4 p-3 bg-gray-200">
+		<div>
+			<h3 class="font-bold text-fuchsia-500">CALL US</h3>
+			<p>1(234) 567-891</p>
+			<p>1 (234) 987-654</p>
+		</div>
+		<div>
+			<h3 class="font-bold text-fuchsia-500">LOCATION</h3>
+			<p>121 Rock Street, 12 Avenue, New York, NY 92103-9000</p>
+		</div>
+		<div>
+			<h3 class="font-bold text-fuchsia-500">OUR TOP SERVICES</h3>
+			<p><strong>Self-Studying</strong></p>
+			<p><strong>Online Courses</strong></p>
+			<p><strong>Challenge Yourself</strong></p><br>
+			<p>Image from <a href="#" class="underline">Freepik</a></p>
+		</div>
+	</div>
+
 </body>
+
 </html>
