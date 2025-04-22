@@ -171,6 +171,9 @@
   }
 }
 @layer utilities {
+  .m-1 {
+    margin: calc(var(--spacing) * 1);
+  }
   .m-2 {
     margin: calc(var(--spacing) * 2);
   }
@@ -183,6 +186,9 @@
   .flex {
     display: flex;
   }
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
   }
@@ -191,6 +197,9 @@
   }
   .h-\[120px\] {
     height: 120px;
+  }
+  .h-full {
+    height: 100%;
   }
   .w-\[500px\] {
     width: 500px;
@@ -201,11 +210,17 @@
   .max-w-\[600px\] {
     max-width: 600px;
   }
+  .max-w-\[1000px\] {
+    max-width: 1000px;
+  }
   .min-w-\[320\] {
     min-width: 320;
   }
   .min-w-\[320px\] {
     min-width: 320px;
+  }
+  .flex-grow {
+    flex-grow: 1;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -215,6 +230,9 @@
   }
   .flex-col {
     flex-direction: column;
+  }
+  .justify-around {
+    justify-content: space-around;
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
@@ -236,6 +254,9 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .bg-\[\#d3c9c7\] {
+    background-color: #d3c9c7;
+  }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
@@ -250,6 +271,15 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-\[url\(images\/cover_image\.png\)\] {
+    background-image: url(images/cover_image.png);
+  }
+  .object-cover {
+    object-fit: cover;
+  }
+  .object-top {
+    object-position: top;
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -276,6 +306,171 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .sm\:visible {
+    @media (width >= 40rem) {
+      visibility: visible;
+    }
+  }
+  .sm\:block {
+    @media (width >= 40rem) {
+      display: block;
+    }
+  }
+  .sm\:flex {
+    @media (width >= 40rem) {
+      display: flex;
+    }
+  }
+  .sm\:h-\[80\] {
+    @media (width >= 40rem) {
+      height: 80;
+    }
+  }
+  .sm\:h-\[80vh\] {
+    @media (width >= 40rem) {
+      height: 80vh;
+    }
+  }
+  .sm\:h-\[90vh\] {
+    @media (width >= 40rem) {
+      height: 90vh;
+    }
+  }
+  .sm\:h-\[95vh\] {
+    @media (width >= 40rem) {
+      height: 95vh;
+    }
+  }
+  .sm\:h-full {
+    @media (width >= 40rem) {
+      height: 100%;
+    }
+  }
+  .sm\:grow {
+    @media (width >= 40rem) {
+      flex-grow: 1;
+    }
+  }
+  .sm\:flex-row {
+    @media (width >= 40rem) {
+      flex-direction: row;
+    }
+  }
+  .sm\:gap-0 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 0);
+    }
+  }
+  .sm\:gap-5 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 5);
+    }
+  }
+  .sm\:gap-10 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:bg-\[url\] {
+    @media (width >= 40rem) {
+      background-color: url;
+    }
+  }
+  .sm\:bg-\[url\(\)\] {
+    @media (width >= 40rem) {
+      background-image: url();
+    }
+  }
+  .sm\:bg-\[url\(\.\/images\)\] {
+    @media (width >= 40rem) {
+      background-image: url(./images);
+    }
+  }
+  .sm\:bg-\[url\(\.\/images\/cover\)\] {
+    @media (width >= 40rem) {
+      background-image: url(./images/cover);
+    }
+  }
+  .sm\:bg-\[url\(\.\/images\/cover_image\.png\)\] {
+    @media (width >= 40rem) {
+      background-image: url(./images/cover_image.png);
+    }
+  }
+  .sm\:bg-\[url\(\.im\)\] {
+    @media (width >= 40rem) {
+      background-image: url(.im);
+    }
+  }
+  .sm\:bg-\[url\(\.images\/\)\] {
+    @media (width >= 40rem) {
+      background-image: url(.images/);
+    }
+  }
+  .sm\:bg-\[url\(\.images\/cover\)\] {
+    @media (width >= 40rem) {
+      background-image: url(.images/cover);
+    }
+  }
+  .sm\:bg-\[url\(images\/cover_image\.png\)\] {
+    @media (width >= 40rem) {
+      background-image: url(images/cover_image.png);
+    }
+  }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
+  }
+  .md\:h-2 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 2);
+    }
+  }
+  .md\:h-\[90vh\] {
+    @media (width >= 48rem) {
+      height: 90vh;
+    }
+  }
+  .md\:h-\[500px\] {
+    @media (width >= 48rem) {
+      height: 500px;
+    }
+  }
+  .md\:h-\[550px\] {
+    @media (width >= 48rem) {
+      height: 550px;
+    }
+  }
+  .md\:h-\[600px\] {
+    @media (width >= 48rem) {
+      height: 600px;
+    }
+  }
+  .md\:h-\[800px\] {
+    @media (width >= 48rem) {
+      height: 800px;
+    }
+  }
+  .md\:h-full {
+    @media (width >= 48rem) {
+      height: 100%;
+    }
+  }
+  .md\:grow {
+    @media (width >= 48rem) {
+      flex-grow: 1;
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
   }
 }
 @property --tw-border-style {
