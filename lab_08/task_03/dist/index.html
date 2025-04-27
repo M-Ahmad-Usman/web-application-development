@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="flex flex-col w-fit max-w-[60vw] mx-auto gap-10 justify-center my-10">
+    <div class="flex flex-col w-fit max-w-[60vw] mx-auto gap-6 justify-center my-10">
 
         <form class="flex flex-col mx-auto gap-2">
             <input type="text" name="start" id="start-val" class="bg-gray-200 p-2 rounded" placeholder="Starting Value">
@@ -18,11 +18,15 @@
             <input type="reset" value="Cancel" id="reset-btn" class="bg-gray-200 p-2 rounded">
         </form>
 
+        <p id="error" class="text-red-500 mx-auto"></p>
+
         <ul class="list-disc">
             <li>Even Numbers: <span id="even-numbers"></span></li>
             <li>Odd Numbers: <span id="odd-numbers"></span></li>
         </ul>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
