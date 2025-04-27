@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/src/styles.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet"> 
-    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <title>Task 05</title>
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+    <form class="flex flex-col gap-4 max-w-[300px] mx-auto my-10">
+        <input type="text" name="start-val" id="start-val" class="bg-gray-100 p-2" placeholder="Starting Value">
+        <input type="text" name="end-val" id="end-val" class="bg-gray-100 p-2" placeholder="Ending Value">
+
+        <input type="submit" id="submit-btn" class="bg-green-500 active:bg-green-700 p-2 rounded" value="Generate Random Number">
+        <input type="reset" class="bg-red-500 active:bg-red-700 p-2 rounded" value="Reset">
+    </form>
 </body>
 
 </html>
