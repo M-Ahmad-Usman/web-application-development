@@ -5,14 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/src/styles.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet"> 
-    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <title>Task 04</title>
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+    <div>
+        <form class="flex flex-col gap-5 max-w-[300px] mx-auto my-10">
+            <input type="text" name="input-val" id="input-val" class="p-2 bg-gray-100 rounded"
+                placeholder="Enter only number">
+            
+            <div class="flex gap-2">
+                <input type="submit" value="Check Prime Number" class="bg-green-500 p-2 w-[60%] active:bg-green-700">
+                <input type="reset" value="Reset" class="bg-red-500 p-2 w-[40%] active:bg-red-700">
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
