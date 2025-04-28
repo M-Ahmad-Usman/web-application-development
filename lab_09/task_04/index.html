@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 04</title>
+    <style>
+        .form-container {
+            background-color: rgb(244, 244, 244);
+            padding: 40px;
+            border-radius: 4px;
+            width: 500px;
+            max-width: 90%;
+            margin: 50px auto;
+            position: relative;
+        }
+        
+        .input-field {
+            margin-bottom: 20px;
+            width: 90%;
+        }
+        
+        .input-field input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .btn {
+            padding: 10px 40px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            color: white;
+        }
+        
+        .btn-primary {
+            background-color: #3182ce;
+        }
+        
+        .btn-secondary {
+            background-color: #b8b8b8;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="input-field">
+            <input type="text" id="string-input" placeholder="Enter the String">
+        </div>
+        <div class="input-field">
+            <input type="text" id="char-input" placeholder="Type Single character" maxlength="1">
+        </div>
+        <div class="button-group">
+            <input type="submit" id="submit-btn" class="btn btn-primary" value="OK">
+            <input type="reset" id="cancel-btn" class="btn btn-secondary" value="Cancel">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
