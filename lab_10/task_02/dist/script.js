@@ -43,6 +43,7 @@ function checkErrors(strNum1, strNum2) {
 }
 
 document.querySelector("#submit-btn").addEventListener("click", (event)=>{
+    event.preventDefault();
 
     if (!checkInputFields()) {
         alert("Please fill in all the fields.");
@@ -52,7 +53,6 @@ document.querySelector("#submit-btn").addEventListener("click", (event)=>{
         return;
     }
     
-    event.preventDefault();
 
     const strtVal = parseInt(strtValInput.value);
     const endVal = parseInt(endValInput.value);
